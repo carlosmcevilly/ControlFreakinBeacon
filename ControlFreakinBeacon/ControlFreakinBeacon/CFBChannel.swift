@@ -141,22 +141,3 @@ public class CFBController: NSObject, CBPeripheralManagerDelegate, CLLocationMan
 
 
 
-/*
-
-@IBOutlet startStopButton: UIButton?
-@IBOutlet statusLabel: UILabel?
-@IBOutlet spinner: UIActivityIndicatorView?
-
-self.statusLabel.hidden = YES;
-self.startButton.hidden = NO;
-
-NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-NSInteger count = [defaults integerForKey:kSQTSetupAlertShownCount];
-if (count < kSQTSetupAlertMaxTimesToShow) {
-count++;
-[[[UIAlertView alloc] initWithTitle:@"Setup" message:@"Before using this, please change your PPI settings:\n\n1) Turn on Monitor Beacons\n\n2) set Notifications settings to show up to 10 recent items.\n\nBe sure to re-launch PPI at least once after first enabling Monitor Beacons." delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil] show];
-[defaults setInteger:count forKey:kSQTSetupAlertShownCount];
-[defaults synchronize];
-
-*/
-
